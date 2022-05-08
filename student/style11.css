@@ -1,0 +1,264 @@
+:root{
+    --primary: #9A1C32;
+    --light: #ffffff;
+    --grey: #efefef;
+}
+
+body {
+    font-family: 'google sans', sans-serif;
+    overflow: hidden;
+}
+
+
+/* Misc */
+.bg-main{
+    background-color: var(--primary) !important;
+}
+.primary-color{
+    color: var(--primary) !important;
+}
+
+a:hover{
+    text-decoration: none;
+}
+.username{
+    background-color: black;
+}
+
+
+/* >> Login Page */
+/* Left Side */
+#backgroundimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+
+/* Sidebar */
+.sidebar{
+    background-color: var(--grey);
+}
+.fa{
+    font-weight: bold;
+    font-size: large;
+}
+.fa p{
+    font-size: large;
+}
+
+/* Right Side */
+#rightside{
+    height: 100vh;
+    background-color: var(--grey);
+}
+#btn-signin{
+    background-color: var(--primary);
+    color: var(--light);
+    font-weight: 500;
+}
+
+/* file input */
+input[type="file"]{
+    display: none;
+}
+.file-label{
+    width: 280px;
+    height: 80px;
+    background-color: var(--light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px dashed rgba(117, 117, 117, 0.5);
+}
+.text-sm{
+    font-size: smaller;
+}
+
+/* Document Submit Button */
+#document-submit{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+}
+#document-submit div button{
+    width: 200px;
+}
+
+/* Main-Content */
+
+/* Top Navigation Bar */
+#topbar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: center;
+}
+#searchbar:active{
+    border-color: var(--primary);
+}
+.avatar{
+    max-width: 45px;
+}
+#searchbtn {
+    background-color: var(--primary);
+    color: var(--light);
+}
+.dropdown-menu a:active{
+    background-color: var(--primary);
+}
+
+/* Actual Main Content */
+.main-content{
+    border-radius: 20px 0 0 0;
+    background-color: var(--grey);
+    color: black;
+    overflow-y: auto;
+    justify-content: center;
+}
+#schedule-card{
+    margin: 20px auto;
+}
+
+
+.card-text{
+    color: #ffffff;
+    font-weight: 100
+}
+
+#accordionExample{
+    justify-content: center;
+    margin: 0 auto;
+    width: 80%;
+}
+
+
+/* Card Styling */
+.item{
+    padding-left:5px;
+    padding-right:5px;
+  }
+  .item-card{
+    transition:0.5s;
+    cursor:pointer;
+  }
+  .item-card-title{  
+    font-size:15px;
+    transition:1s;
+    cursor:pointer;
+  }
+  .item-card-title i{  
+    font-size:15px;
+    transition:1s;
+    cursor:pointer;
+    color:#ffa710
+  }
+  .card-title i:hover{
+    transform: scale(1.25) rotate(100deg); 
+    color:#18d4ca;
+    
+  }
+  .card:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 10px 40px rgba(173, 173, 173, 0.3);
+    border: 0px;
+  }
+  .card-text{
+    height:80px;  
+  }
+  
+  .card::before, .card::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: scale3d(0, 0, 1);
+    transition: transform .3s ease-out 0s;
+    background: rgba(255, 255, 255, 0.1);
+    content: '';
+    pointer-events: none;
+    
+  }
+  .card::before {
+    transform-origin: left top;
+  }
+  .card::after {
+    transform-origin: right bottom;
+  }
+  .card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
+    transform: scale3d(1, 1, 1);
+  }
+.profile_label{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+.profile_form{
+    width:70%;
+}
+.profile_form input{
+    max-width: 30vw;
+}
+.profile_form{
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* In Progress Card */
+/* Search-select-box */
+/* Completed Card*/
+/* To Do card */
+
+/* Media Query */
+/* Screen size >= 768px*/
+@media (min-width: 768px) {
+    .sidebar{
+        background-color: var(--grey);
+        height: 100vh;
+        width: 20%;
+        font-weight: 400px;
+    }
+    #menu-list{
+        display: inline-flex;
+        flex-direction: column;
+    }
+    #content {
+        height: 90vh;
+    }
+    #content::-webkit-scrollbar{
+        display: none;
+    }
+
+}
+/* Screen size <= 768px*/
+@media (max-width: 768px) {
+    body{
+        overflow: auto;
+    }
+    .main-content{
+        border-radius: 15px 15px 0 0;
+        margin: 1px;
+        justify-content: center;
+
+    }
+    #menu-list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-self: center;
+    }
+    #rightside{
+        height: 50vh;
+    }
+
+}
+
+/* Screen size <= 575.98 */
+@media (max-width: 575.98px) {
+    #rightside{
+        height: 50vh;
+    }
+}

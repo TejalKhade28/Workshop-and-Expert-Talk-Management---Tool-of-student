@@ -1,0 +1,17 @@
+Workshop and Expert Talk Management -Tool of the students
+http://localhost:8080/workshoptool/index.php
+http://localhost:8080/phpmyadmin/
+
+Student:
+The student can see the completed sessions events and the upcoming events. The completed events include workshops and hands-on sessions and expert talks. The student can register for the upcoming events by clicking on the register now button.Student can provide feedback for all the registered events and this feedback is recieved by the faculty.
+Faculty:
+In the faculty dashboard, the faculty can see the scheduled events and completed events also. In the schedule section ,the faculty can arrange the events such FDP,STTP,workshops, expert talks, hands-on-session.
+The faculty can take the year,semester,date,time,topic of event,conduction details and organization and budget of the speaker. 
+The documents section includes the schedule  for which the documents like attendance sheet,feedback response,Permission letter(HOD),Permission letter of Principal, Gap identification sheet, and college photo of student, bill, and workshop relevance proof. 
+Once all the documents are uploaded , the track is kept with the admin.
+
+
+Admin:
+The admin dashboard includes three events section - In Progress,Completed and ToDo.
+The users section includes the registered students, faculties and admins.
+The verification contains all the documents uploaded by the faculty.
